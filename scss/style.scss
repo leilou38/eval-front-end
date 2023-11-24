@@ -97,21 +97,38 @@ p{
     
 }
 
-// Tout ce qui concerne les 4 véhicules // 
 
+// le main // 
 
-.location {
+.location-container, p {
+    flex-direction: column;
+}
+
+.location-item {
     display: flex;
-    display: flex column;
+    margin-bottom: 20px;
     align-items: center;
-    padding: 0;
+    justify-content: center;
+    
+   
+
 }
 
-.select{
-    display: flex;
-    position: absolute;
-    right: 40%;
+.location-item img {
+    max-width: 100%;
+    grid-column: 1;
+    
+
 }
+
+.location-details {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+// le footer //
 
 
 

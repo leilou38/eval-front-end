@@ -62,17 +62,26 @@ p {
   width: 50vw;
 }
 
-.location {
-  display: flex;
-  display: flex column;
-  align-items: center;
-  padding: 0;
+.location-container, p {
+  flex-direction: column;
 }
 
-.select {
+.location-item {
   display: flex;
-  position: absolute;
-  right: 40%;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-item img {
+  max-width: 100%;
+  grid-column: 1;
+}
+
+.location-details {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 footer img {
